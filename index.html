@@ -1,134 +1,158 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meet on WhatsApp</title>
+  <title>Download New WhatsApp 2025</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-    body{background:#fff;color:#333;}
+    body{background:#fff;color:#333;line-height:1.6;}
 
-    header{background:linear-gradient(to right,#25D366,#128C7E);color:#fff;text-align:center;padding:50px 20px;}
+    header{background:linear-gradient(to right,#25D366,#128C7E);color:#fff;text-align:center;padding:60px 20px;}
     header h1{font-size:2.5rem;margin-bottom:15px;}
-    header p{font-size:1.1rem;margin-bottom:25px;}
+    header p{font-size:1.2rem;margin-bottom:25px;}
+
     .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 40px;font-size:1.2rem;
       color:#fff;background:#25D366;border-radius:50px;text-decoration:none;transition:0.3s;
       box-shadow:0 8px 20px rgba(0,0,0,0.25);position:relative;overflow:hidden;font-weight:600;}
     .btn:hover{background:#128C7E;transform:scale(1.05);}
-
-    /* Shine Effect on Button */
     .btn::after {
       content:"";
-      position:absolute;
-      top:0;left:-100%;
-      width:100%;height:100%;
+      position:absolute;top:0;left:-100%;width:100%;height:100%;
       background:linear-gradient(120deg,transparent,rgba(255,255,255,0.6),transparent);
       transform:skewX(-25deg);
     }
-    .btn:hover::after {
-      left:200%;
-      transition:0.8s;
-    }
+    .btn:hover::after{left:200%;transition:0.8s;}
 
-    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;padding:40px 20px;}
-    .gallery img{width:100%;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,0.15);transition:transform 0.3s;}
-    .gallery img:hover{transform:scale(1.05);}
+    section{padding:60px 25px;text-align:center;}
+    .features{background:#f9f9f9;}
+    .features h2{color:#128C7E;margin-bottom:20px;font-size:2rem;}
+    .features ul{list-style:none;max-width:600px;margin:0 auto;text-align:left;}
+    .features li{margin:10px 0;font-size:1.1rem;}
+    .features li i{color:#25D366;margin-right:8px;}
+
+    /* Countdown + Counter */
+    .urgency{background:#fff;border-top:3px solid #25D366;box-shadow:0 0 15px rgba(0,0,0,0.1);}
+    .urgency h2{color:#128C7E;font-size:2rem;margin-bottom:15px;}
+    .countdown{font-size:1.5rem;font-weight:700;color:red;margin:15px 0;}
+    .downloads{font-size:1.2rem;color:#333;}
+
+    /* Testimonials */
+    .testimonials{background:#f0fff8;}
+    .testimonials h2{color:#128C7E;margin-bottom:30px;}
+    .testimonial-box{max-width:800px;margin:0 auto;display:grid;gap:20px;}
+    .card{background:#fff;padding:20px;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,0.1);text-align:left;}
+    .card p{margin-bottom:10px;}
+    .card strong{color:#128C7E;}
+
     footer{background:#075E54;color:#fff;text-align:center;padding:30px 20px;}
     footer p{margin-bottom:15px;}
 
-    /* WhatsApp Download Section */
-    .download-section {
-      text-align:center;
-      padding:70px 25px;
-      background:linear-gradient(135deg,#e0fff2,#ffffff);
-      border-top:3px solid #25D366;
-      box-shadow:0 0 20px rgba(37,211,102,0.3);
+    /* Sticky Button */
+    .sticky-btn{
+      position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
+      z-index:999;background:#25D366;padding:14px 35px;border-radius:50px;
+      color:#fff;font-size:1.2rem;display:flex;align-items:center;gap:10px;
+      text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,0.3);animation:bounce 2s infinite;
     }
-    .badge {
-      display:inline-block;
-      background:red;
-      color:#fff;
-      font-size:1rem;
-      padding:6px 15px;
-      border-radius:20px;
-      margin-bottom:15px;
-      animation:pulse 1.5s infinite;
-    }
-    @keyframes pulse {
-      0%{transform:scale(1);}
-      50%{transform:scale(1.1);}
-      100%{transform:scale(1);}
-    }
-    .download-section h2 {
-      font-size:2.4rem;
-      font-weight:700;
-      color:#128C7E;
-      margin-bottom:15px;
-      animation:bounce 2s infinite;
-    }
-    .download-section p {
-      font-size:1.2rem;
-      margin-bottom:30px;
-      color:#333;
-    }
-    .animate-sub {
-      animation:typing 4s steps(40,end) infinite alternate;
-      white-space:nowrap;overflow:hidden;border-right:3px solid #25D366;display:inline-block;
-    }
+    .sticky-btn:hover{background:#128C7E;}
     @keyframes bounce {
-      0%,20%,50%,80%,100%{transform:translateY(0);}
-      40%{transform:translateY(-10px);}
-      60%{transform:translateY(-5px);}
-    }
-    @keyframes typing {
-      from{width:0;}
-      to{width:100%;}
+      0%,20%,50%,80%,100%{transform:translate(-50%,0);}
+      40%{transform:translate(-50%,-10px);}
+      60%{transform:translate(-50%,-5px);}
     }
   </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <header>
-    <h1><i class="fa-brands fa-whatsapp"></i> Chat with Beautiful Girls on WhatsApp</h1>
-    <p>Find genuine connections and start chatting instantly.</p>
-    <a href="https://affgo.xyz/click?p=52403&t=68bb9ae35b16c&o=28037&c=1&s1=" class="btn">
-      <i class="fa-brands fa-whatsapp"></i> Start WhatsApp Chat
+    <h1><i class="fa-brands fa-whatsapp"></i> Official WhatsApp 2025 Update</h1>
+    <p>🚀 Faster • 🔒 Safer • 🎨 New Look – Get it now before it’s gone!</p>
+    <a href="https://affgo.xyz/click?p=52403&t=68bb9ae35b16c&o=25119&c=1&s1=" class="btn">
+      <i class="fa-solid fa-download"></i> Download Now
     </a>
   </header>
 
-  <!-- Gallery Section -->
-  <section class="gallery">
-    <img src="https://i.imgur.com/7sjkFYT.jpeg" alt="Profile 1">
-    <img src="https://i.imgur.com/tNhievL.jpeg" alt="Profile 2">
-    <img src="https://i.imgur.com/AX58JCK.jpeg" alt="Profile 3">
-    <img src="https://i.imgur.com/MvNdpns.jpeg" alt="Profile 4">
-    <img src="https://i.imgur.com/xKztfwt.jpeg" alt="Profile 5">
-    <img src="https://i.imgur.com/TxnbiXi.jpeg" alt="Profile 6">
+  <!-- Features -->
+  <section class="features">
+    <h2>✨ What’s New in WhatsApp 2025?</h2>
+    <ul>
+      <li><i class="fa-solid fa-check-circle"></i> Hidden Chats & Advanced Privacy</li>
+      <li><i class="fa-solid fa-check-circle"></i> 2x Faster Loading Speed</li>
+      <li><i class="fa-solid fa-check-circle"></i> New Themes & Custom Colors</li>
+      <li><i class="fa-solid fa-check-circle"></i> HD Photos & Video Sharing</li>
+      <li><i class="fa-solid fa-check-circle"></i> Battery Saver Mode</li>
+    </ul>
   </section>
 
-  <!-- WhatsApp Download Section -->
-  <section class="download-section">
-    <div class="badge">🔥 New 2025 Update</div>
-    <h2>📥 Download New WhatsApp </h2>
-    <p class="animate-sub">WhatsApp New version </p>
-    <br><br>
-    <!-- Big Download Button -->
-    <a href="https://affgo.xyz/click?p=52403&t=68bb9ae35b16c&o=25119&c=1&s1=" target="_blank" class="btn">
-      <i class="fa-solid fa-download"></i> Download WhatsApp Now
+  <!-- Urgency Section -->
+  <section class="urgency">
+    <h2>⏳ Limited Time Offer</h2>
+    <div class="countdown" id="countdown">10:00</div>
+    <div class="downloads" id="downloads">🔥 1,247 people already downloaded today</div>
+    <br>
+    <a href="https://affgo.xyz/click?p=52403&t=68bb9ae35b16c&o=25119&c=1&s1=" class="btn">
+      <i class="fa-solid fa-download"></i> Download WhatsApp Update
     </a>
   </section>
 
-  <!-- Footer Section -->
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>💬 What Users Say</h2>
+    <div class="testimonial-box">
+      <div class="card">
+        <p>"This new WhatsApp feels super fast and smooth! Love the hidden chats feature 😍"</p>
+        <strong>- Ayesha, Dhaka</strong>
+      </div>
+      <div class="card">
+        <p>"Finally an update that saves my battery and looks beautiful at the same time!"</p>
+        <strong>- Rahul, Mumbai</strong>
+      </div>
+      <div class="card">
+        <p>"The HD video sharing is a game-changer. I recommend everyone to download!"</p>
+        <strong>- Sophia, London</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>Ready to connect on WhatsApp?</p>
+    <p>Ready to try the new WhatsApp experience?</p>
     <a href="https://affgo.xyz/click?p=52403&t=68bb9ae35b16c&o=25119&c=1&s1=" class="btn">
-      <i class="fa-brands fa-whatsapp"></i> Start Chatting
+      <i class="fa-brands fa-whatsapp"></i> Download WhatsApp Now
     </a>
   </footer>
+
+  <!-- Sticky Download Button -->
+  <a href="https://affgo.xyz/click?p=52403&t=68bb9ae35b16c&o=25119&c=1&s1=" class="sticky-btn">
+    <i class="fa-solid fa-download"></i> Get WhatsApp 2025
+  </a>
+
+  <!-- JS for Countdown + Counter -->
+  <script>
+    // Countdown Timer
+    let time = 600; // 10 minutes
+    const countdownEl = document.getElementById("countdown");
+    setInterval(()=>{
+      let minutes = Math.floor(time/60);
+      let seconds = time%60;
+      seconds = seconds < 10 ? "0"+seconds : seconds;
+      countdownEl.innerHTML = `${minutes}:${seconds}`;
+      if(time>0) time--;
+    },1000);
+
+    // Fake Download Counter
+    const downloadsEl = document.getElementById("downloads");
+    let downloads = 1247;
+    setInterval(()=>{
+      downloads += Math.floor(Math.random()*3)+1;
+      downloadsEl.innerHTML = `🔥 ${downloads} people already downloaded today`;
+    },4000);
+  </script>
 
 </body>
 </html>
